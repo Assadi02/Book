@@ -3,6 +3,8 @@
 include_once dirname(__DIR__) . '/config/config.php';
 session_start();
 
+
+
 if(!isset($_SESSION['user'])) {
     $_SESSION['error'] = "Please login to book a room";
     header('Location: ' . BASE_URL . '/login');
